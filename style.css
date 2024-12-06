@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family: 'Epilogue', sans-serif;
+    overflow-y: auto;
+}
+
+.center-column {
+    width: 375px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-section {
+    width: 100%;
+    height: 692.82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px; /* Ensure spacing below header-section */
+}
+
+.header-container {
+    width: 315px;
+    height: 582.82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headline-subhead {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align elements to the left */
+    justify-content: flex-start;
+    position: relative;
+}
+
+.headline {
+    width: 100%;
+    height: 30px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    margin-top: 5px;
+}
+
+.subhead {
+    width: 315px;
+    height: 98px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align elements to the left */
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+    margin-top: 80px;
+}
+
+.subhead p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: left; /* Align text to the left */
+}
+
+.header-image {
+    width: 315px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logos-section {
+    width: 375px;
+    height: 354.83px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Ensure spacing below logos-section */
+}
+
+.logos {
+    width: 242px;
+    height: 354.83px;
+    position: relative;
+    border-top: 2px solid #D3D3D3; /* Lighter grey */
+    border-bottom: 2px solid #D3D3D3; /* Lighter grey */
+}
+
+.stripe1 {
+    position: absolute;
+    top: 60px;
+    left: 10.07px;
+    width: 222px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stripe2 {
+    position: absolute;
+    top: 154px;
+    left: 0;
+    width: 242px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.awards {
+    position: absolute;
+    top: 260.63px;
+    left: 14.13px;
+    width: 214px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skills-section {
+    width: 375px;
+    height: 1534px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Ensure spacing below skills-section */
+}
+
+.skills {
+    width: 249.9px;
+    height: 1234px;
+    position: relative; /* Use relative positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align elements to the left */
+    justify-content: space-between; /* Ensure vertical spacing */
+}
+
+.skill {
+    width: 249.9px;
+    height: 328px;
+    display: flex;
+    align-items: flex-start; /* Ensure content is pushed to the top */
+    justify-content: flex-start; /* Align content to the left */
+    position: absolute; /* Use absolute positioning */
+}
+
+#skill1 {
+    top: 0; /* Pushed to the top */
+}
+
+#skill2 {
+    top: 50%; /* Vertically centered */
+    transform: translateY(-50%);
+}
+
+#skill3 {
+    bottom: 0; /* Pushed to the bottom */
+}
+
+.skill img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill .headline-subhead {
+    width: 249.9px;
+    height: 142px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align elements to the left */
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.skill .headline-subhead .headline {
+    width: 249.9px;
+    height: 42px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 42px;
+    color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    box-sizing: border-box;
+    margin-bottom: 16px; /* Reduce bottom margin */
+}
+
+.skill .headline-subhead .subhead {
+    width: 249.9px;
+    height: 81px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box;
+    margin-top: 4px; /* Increase top margin */
+}
+
+.latest-work-section {
+    width: 375px;
+    height: 2924px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Use relative positioning for absolute positioning of the title */
+}
+
+.latest-work-title {
+    width: 191px;
+    height: 42px;
+    position: absolute;
+    top: 40px; /* Y-coordinate */
+    left: 92px; /* X-coordinate */
+    color: #2D2D2D;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure text stays within the box */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.work-cards {
+    width: 315px;
+    height: 2742px;
+    position: absolute;
+    top: 142px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-card {
+    width: 315px;
+    height: 406px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-card-image {
+    width: 315px;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-card-text {
+    width: 315px;
+    height: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensure text is centered vertically */
+    align-items: flex-start; /* Align elements to the left */
+    padding: 5px 10px; /* Adjust padding to control spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+}
+
+.work-card-text .headline {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    color: #2D2D2D;
+    line-height: 42px;
+    margin: 0;  /* Ensure no extra space */
+    padding-left: 0; /* Remove extra padding */
+    text-align: left; /* Align text to the left */
+}
+
+.work-card-text .subhead {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #2D2D2D;
+    line-height: 27px;
+    text-align: left; /* Align text to the left */
+    margin: 0;  /* Ensure no extra space */
+    padding-left: 0; /* Remove extra padding */
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+}
+
+.clients-section {
+    width: 375px;
+    height: 1384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to start from the top */
+    align-items: center;
+    position: relative; /* Ensure correct positioning */
+    margin-top: 20px; /* Space it below the Latest Work section */
+}
+
+.clients-title {
+    width: 191px;
+    height: 42px;
+    position: absolute;
+    top: 0; /* Align to the very top */
+    left: 92px; /* Center within section */
+    color: #2D2D2D;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure text stays within the box */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.clients {
+    width: 315px;
+    height: 1234px;
+    position: absolute;
+    top: 60px; /* Adjust Y-coordinate to account for title */
+    left: 30px; /* X-coordinate */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align cards to the top */
+    align-items: center;
+    gap: 65px; /* Use gap to create space above each card */
+    box-sizing: border-box;
+    padding-top: 65px; /* Add top padding to create initial space */
+}
+
+.client-card {
+    width: 315px;
+    height: 344px;
+    background-color: #FFFCF5; /* FFFCF5 color */
+    border: 2px solid #FFD285; /* FFD285 border */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    padding: 30px; /* Add padding as specified */
+    box-sizing: border-box; /* Ensure padding is included in the dimensions */
+    position: relative; /* Enable absolute positioning for child elements */
+}
+
+.client-card p {
+    color: #2D2D2D; /* Text color */
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-weight: 600; /* Semibold */
+    font-size: 20px; /* Font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    text-align: left; /* Align text to the left */
+}
+
+.client-info {
+    width: 263px;
+    height: 84px;
+    color: #2D2D2D; /* Text color */
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-weight: 600; /* Semibold */
+    font-size: 20px; /* Font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    text-align: left; /* Align text to the left */
+    margin-top: 20px; /* Add some space between paragraphs */
+    padding-left: 60px; /* Add left padding to avoid overlap with the image */
+    position: relative; /* Enable absolute positioning for child elements */
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0; /* Position at the top left */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Add some space between stars */
+    font-size: 24px; /* Adjust the size of the stars */
+    color: #2D2D2D; /* Match text color */
+}
+
+.author-name, .author-company {
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-weight: 400; /* Regular weight */
+    font-size: 17px; /* Font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: #2D2D2D; /* Text color */
+    margin-top: 5px; /* Add some space above the text */
+}
+
+.footer {
+    width: 375px;
+    height: 1104px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    position: relative; /* Ensure correct positioning */
+    margin-top: 20px; /* Space it below the Clients section */
+    padding-top: 0; /* Remove top padding */
+}
+
+.footer-title {
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-weight: 600; /* Semibold */
+    font-size: 32px; /* Font size */
+    color: #2D2D2D; /* Text color */
+    top: 70px;
+    margin-bottom: 20px; /* Add some space below the title */
+    text-align: center; /* Center align the text */
+}
+
+.footer-template-text {
+    color: #2D2D2D; /* Text color */
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-weight: 600; /* Semibold */
+    font-size: 20px; /* Font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Add some space below the text */
+}
+
+.footer-info {
+    width: 315px;
+    height: 1034px;
+    background-color: white; /* Change background to white */
+    border-top: 2px solid #2D2D2D; /* Add a border only on top */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #2D2D2D; /* Text color */
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+}
+
+.info {
+    width: 315px;
+    height: 964px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    position: relative; /* Ensure the submit button is positioned relative to this container */
+}
+
+.footer-message {
+    width: 315px;
+    height: 259px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure space between title and template text */
+    align-items: center;
+    margin-bottom: 20px; /* Add space below the footer message */
+}
+
+.contact-info {
+    width: 315px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts from the top */
+    align-items: center;
+    color: white; /* Set text color to white */
+    position: relative; /* Ensure the social icons can be positioned absolutely */
+}
+
+.footer-title {
+    width: 315px;
+    height: 84px;
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-weight: 600; /* Semibold */
+    font-size: 32px; /* Font size */
+    color: #2D2D2D; /* Text color */
+    text-align: center; /* Center align the text */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+.footer-template-text {
+    width: 315px;
+    height: 135px;
+    color: #2D2D2D; /* Text color */
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-weight: 400; /* Regular */
+    font-size: 17px; /* Font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    text-align: left; /* Align text to the left */
+}
+
+.social-icons {
+    width: 232px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around; /* Distribute icons evenly */
+    align-items: center;
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Position at the left */
+}
+
+.social-icons a {
+    color: #2D2D2D; /* Set icon color */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-icons a:hover {
+    color: #FFD285; /* Change icon color on hover */
+}
+
+.text-fields {
+    width: 315px;
+    height: 529px; /* Adjust height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start from the top */
+    align-items: center;
+    gap: 10px; /* Space between fields */
+    margin-bottom: 20px; /* Add some space below the text fields */
+    position: relative; /* Ensure the button can be positioned absolutely within */
+}
+
+.text-field {
+    width: 100%;
+    height: 69px;
+    padding: 10px;
+    background-color: #F3F3F3;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 17px; /* Adjust font size */
+    color: #2D2D2D;
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+    border: none; /* Remove border */
+}
+
+.text-field::placeholder {
+    color: #2D2D2D; /* Placeholder text color */
+}
+
+.text-field:first-of-type {
+    margin-top: 0; /* Push to the top wall */
+}
+
+.text-field:nth-of-type(2) {
+    margin-top: 10px; /* Distance from the top field */
+}
+
+.message-field {
+    width: 100%;
+    height: 231px;
+    padding: 10px;
+    background-color: #F3F3F3;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 17px; /* Adjust font size */
+    color: #2D2D2D;
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+    border: none; /* Remove border */
+    resize: none; /* Disable resizing */
+    margin-top: 10px; /* Distance from the email field */
+}
+
+.message-field::placeholder {
+    color: #2D2D2D; /* Placeholder text color */
+}
+
+.submit-button {
+    width: 235px;
+    height: 80px;
+    background-color: #2D2D2D;
+    color: white; /* Text color */
+    font-family: 'Epilogue', sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+    font-weight: 600; /* Semibold */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Position absolute within text-fields */
+    bottom: 0px; /* Align to the bottom */
+    left: 0px; /* Align to the left */
+}
